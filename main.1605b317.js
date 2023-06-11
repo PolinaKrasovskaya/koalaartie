@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"epB2":[function(require,module,exports) {
 "use strict";var e=u(require("./js/_upPageAndscroll"));function u(e){return e&&e.__esModule?e:{default:e}}(0,e.default)(".pageup");
 },{"./js/_upPageAndscroll":"qJbf"}]},{},["epB2"], null)
-//# sourceMappingURL=/artstudio/main.1605b317.js.map
+//# sourceMappingURL=/koalaart/main.1605b317.js.map
