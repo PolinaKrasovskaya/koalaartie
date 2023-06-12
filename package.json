@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://PolinaKrasovskaya.github.io/artstudio",
+  "homepage": "https://PolinaKrasovskaya.github.io/koalaart",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /artstudio/",
+    "predeploy": "npm run build -- --public-url /koalaart/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
