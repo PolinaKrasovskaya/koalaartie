@@ -71,7 +71,7 @@
         splide.mount();
       });
     </script> -->
-    <script>
+    <!-- <script>
       new Splide('.splide', {
         perPage: 3,
         // gap: '1rem',
@@ -82,7 +82,7 @@
         perMove: 3,
         // padding: { left: 30 },
         breakpoints: {
-          1200: { perPage: 2, perMove: 2 },
+          1280: { perPage: 2, perMove: 2 },
           768: { perPage: 1, perMove: 1 },
         },
         // height: auto,
@@ -108,15 +108,114 @@
           page: 'splide__pagination__page my-page',
         },
       }).mount();
+    </script> -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var main = new Splide('#main-carousel', {
+          type: 'fade',
+          rewind: true,
+          pagination: false,
+          arrows: false,
+          fixedWidth: 350,
+          // fixedWidth: 300,
+          drag: false,
+        });
+        var thumbnails = new Splide('#thumbnail-carousel', {
+          fixedWidth: 50,
+          fixedHeight: 50,
+          width: 250,
+          gap: 10,
+          rewind: true,
+          pagination: false,
+          isNavigation: true,
+          focus: 'center',
+          // breakpoints: {
+          //   600: {
+          //     fixedWidth: 100,
+          //     fixedHeight: 100,
+          //   },
+          // },
+          classes: {
+            arrows: 'splide__arrows arrows',
+            arrow: 'splide__arrow arrow',
+            prev: 'splide__arrow--prev arrow-prev',
+            next: 'splide__arrow--next arrow-next',
+          },
+        });
+        main.sync(thumbnails);
+        main.mount();
+        thumbnails.mount();
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var main = new Splide('#main-carousel-p', {
+          type: 'fade',
+          rewind: true,
+          pagination: false,
+          arrows: false,
+          fixedWidth: 350,
+          // fixedWidth: 300,
+          drag: false,
+        });
+        var thumbnails = new Splide('#thumbnail-carousel-p', {
+          fixedWidth: 50,
+          fixedHeight: 50,
+          width: 250,
+          gap: 10,
+          rewind: true,
+          pagination: false,
+          isNavigation: true,
+          breakpoints: {
+            600: {
+              fixedWidth: 60,
+              fixedHeight: 44,
+            },
+          },
+
+          classes: {
+            arrows: 'splide__arrows arrows',
+            arrow: 'splide__arrow arrow',
+            prev: 'splide__arrow--prev arrow-prev',
+            next: 'splide__arrow--next arrow-next',
+            splide: 'splide__slide splide-li',
+          },
+        });
+        main.sync(thumbnails);
+        main.mount();
+        thumbnails.mount();
+      });
     </script>
 
     <!-- <script>
-      new Splide('.splide', {
-        perPage: 1,
-        drag: false,
-        perMove: 1,
-        padding: { left: 30 },
-      }).mount(); -->
-    <!-- </script> -->
+      const btnMenu = document.querySelector('.menu-button');
+      const menu = document.querySelector('.menu-container');
+      const toggleMenu = function () {
+        menu.classList.toggle('icon-cross');
+      };
+
+      btnMenu.addEventListener('click', function (e) {
+        e.stopPropagation();
+        toggleMenu();
+      });
+
+      document.addEventListener('click', function (e) {
+        const target = e.target;
+        const its_menu = target == menu || menu.contains(target);
+        const its_btnMenu = target == btnMenu;
+        const menu_is_active = menu.classList.contains('icon-cross');
+
+        if (!its_menu && !its_btnMenu && menu_is_active) {
+          toggleMenu();
+        }
+      });
+    </script> -->
+    <script>
+      new Splide('#image-carousel', {
+        cover: true,
+        heightRatio: 0.5,
+      }).mount();
+    </script>
   </body>
 </html>
