@@ -538,10 +538,6 @@ button:hover,
 .prices {
   background-color: #ffffff;
   border: 1px solid #d41443;
-  width: 100%;
-  display: block;
-  align-items: center;
-  justify-content: center;
 }
 
 .prices-heading {
@@ -582,17 +578,20 @@ button:hover,
   }
 }
 
-.large {
+.price-item {
   display: flex;
-  margin-left: 2px;
-  width: 165px;
-  height: 190px;
   border: 1px solid grey;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
   border: 4px;
+}
+
+.large {
+  margin-left: 2px;
+  width: 165px;
+  height: 190px;
 }
 .large:hover, .large:focus, .large:touchstart {
   color: #2196f3;
@@ -613,17 +612,10 @@ button:hover,
 }
 
 .big {
-  display: flex;
   margin-top: 60px;
   margin-left: 10px;
   width: 100px;
   height: 80px;
-  border: 1px solid grey;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 4px;
 }
 @media screen and (min-width: 768px) {
   .big {
@@ -640,17 +632,10 @@ button:hover,
 }
 
 .medium {
-  display: flex;
   margin-left: 10px;
   margin-top: 20px;
   width: 70px;
   height: 50px;
-  border: 1px solid grey;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 4px;
 }
 @media screen and (min-width: 768px) {
   .medium {
@@ -667,17 +652,10 @@ button:hover,
 }
 
 .small {
-  display: flex;
   margin-left: 25px;
   margin-top: 25px;
   width: 40px;
   height: 60px;
-  border: 1px solid grey;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 4px;
 }
 @media screen and (min-width: 768px) {
   .small {
@@ -695,17 +673,10 @@ button:hover,
 }
 
 .extra-big {
-  display: flex;
   margin-top: 20px;
   margin-left: 40px;
   width: 110px;
   height: 90px;
-  border: 1px solid grey;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 4px;
 }
 @media screen and (min-width: 768px) {
   .extra-big {
@@ -721,17 +692,10 @@ button:hover,
 }
 
 .medium-big {
-  display: flex;
   margin-top: -10px;
   margin-left: 35px;
   width: 80px;
   height: 60px;
-  border: 1px solid grey;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 4px;
 }
 @media screen and (min-width: 768px) {
   .medium-big {
@@ -748,27 +712,6 @@ button:hover,
 
 .box-pr {
   display: flex;
-}
-
-.item {
-  position: relative;
-}
-
-.item .box-content {
-  display: none;
-  position: absolute;
-  background-color: #d3f1ff;
-  /* Фон подсказки */
-  padding: 0rem 1.2rem;
-  /* Отступы от края */
-  text-align: center;
-  font-size: 2rem;
-  color: #c300ff;
-  /* Цвет текста */
-}
-
-.item:hover .box-content {
-  display: block;
 }
 
 .splide__slide img {
