@@ -3,7 +3,12 @@
   display: block;
   margin-top: auto;
   margin-bottom: auto;
-  border-bottom: 1px solid #ececec;
+  border: 3px solid red;
+  // border-bottom: 1px solid #ececec;
+  // background-color: #fff;
+  // top: 0;
+  // z-index: 100;
+  // width: 100%;
 }
 
 .header-main {
@@ -28,7 +33,7 @@
     width: 250px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1200px) {
     width: 300px;
   }
 }
@@ -48,7 +53,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-    @media screen and(min-width: 1280px) {
+    @media screen and(min-width: 1200px) {
       font-size: 14px;
       font-weight: 500;
       line-height: 1.14;
@@ -207,7 +212,7 @@
     display: none;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1200px) {
     margin-left: auto;
   }
 
@@ -223,7 +228,7 @@
     }
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1200px) {
     display: none;
 
     .item + .item {

@@ -17,9 +17,10 @@ html {
   }
   
   body * {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Old Standard TT', serif;
+    // font-family: "Roboto", sans-serif;
     @include fonts(14px, 400, 1.71, 0.03em);
-    color: $main-text-cl;
+    // color: $main-text-cl;
   }
   
   img {

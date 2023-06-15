@@ -2,9 +2,10 @@
 
 const appLog = (upSelector) => {
     const upElem = document.querySelector(upSelector);
+    console.log(upElem)
     window.addEventListener('scroll', () => {
         if (document.documentElement.scrollTop > 300) {
-            console.log('start');
+            // console.log('start');
             upElem.style.opacity = 1;
         } else {
             upElem.style.opacity = 0;
