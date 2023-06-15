@@ -342,14 +342,43 @@ button:hover,
   .aboutus-heading {
     font-size: 48px;
     line-height: 1.15;
-    margin-bottom: 150px;
   }
 }
 @media screen and (min-width: 1280px) {
   .aboutus-heading {
     font-size: 58px;
     line-height: 1.14;
-    margin-bottom: 259px;
+  }
+}
+
+.strong {
+  width: 200px;
+  height: 100px;
+  margin-left: 20px;
+  border: 1p solid grey;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.box-strong {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .box-strong {
+    display: flex;
+  }
+}
+
+.box-one {
+  display: block;
+}
+@media screen and (min-width: 1280px) {
+  .box-one {
+    display: flex;
   }
 }
 
