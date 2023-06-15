@@ -127,9 +127,10 @@ exports.default = void 0;
 
 var appLog = function appLog(upSelector) {
   var upElem = document.querySelector(upSelector);
+  console.log(upElem);
   window.addEventListener('scroll', function () {
     if (document.documentElement.scrollTop > 300) {
-      console.log('start');
+      // console.log('start');
       upElem.style.opacity = 1;
     } else {
       upElem.style.opacity = 0;
@@ -204,7 +205,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58029" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58346" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
