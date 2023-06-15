@@ -584,9 +584,9 @@ button:hover,
 
 .large {
   display: flex;
-  margin-left: 5px;
-  height: 200px;
-  width: 175px;
+  margin-left: 2px;
+  width: 165px;
+  height: 190px;
   border: 1px solid grey;
   align-items: center;
   justify-content: center;
@@ -598,6 +598,13 @@ button:hover,
   color: #2196f3;
   fill: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .large {
+    margin-left: 5px;
+    width: 175px;
+    height: 200px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .large {
     height: 300px;
@@ -608,9 +615,9 @@ button:hover,
 .big {
   display: flex;
   margin-top: 60px;
-  margin-left: 20px;
-  width: 110px;
-  height: 90px;
+  margin-left: 10px;
+  width: 100px;
+  height: 80px;
   border: 1px solid grey;
   align-items: center;
   justify-content: center;
@@ -621,6 +628,8 @@ button:hover,
 @media screen and (min-width: 768px) {
   .big {
     margin-left: 30px;
+    width: 110px;
+    height: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -634,8 +643,8 @@ button:hover,
   display: flex;
   margin-left: 10px;
   margin-top: 20px;
-  width: 80px;
-  height: 60px;
+  width: 70px;
+  height: 50px;
   border: 1px solid grey;
   align-items: center;
   justify-content: center;
@@ -646,6 +655,8 @@ button:hover,
 @media screen and (min-width: 768px) {
   .medium {
     margin-left: 20px;
+    width: 80px;
+    height: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -659,8 +670,8 @@ button:hover,
   display: flex;
   margin-left: 25px;
   margin-top: 25px;
-  width: 50px;
-  height: 70px;
+  width: 40px;
+  height: 60px;
   border: 1px solid grey;
   align-items: center;
   justify-content: center;
@@ -672,6 +683,8 @@ button:hover,
   .small {
     margin-left: 60px;
     margin-top: 40px;
+    width: 50px;
+    height: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -685,14 +698,20 @@ button:hover,
   display: flex;
   margin-top: 20px;
   margin-left: 40px;
-  width: 120px;
-  height: 100px;
+  width: 110px;
+  height: 90px;
   border: 1px solid grey;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
   border: 4px;
+}
+@media screen and (min-width: 768px) {
+  .extra-big {
+    width: 120px;
+    height: 100px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .extra-big {
@@ -705,14 +724,20 @@ button:hover,
   display: flex;
   margin-top: -10px;
   margin-left: 35px;
-  width: 90px;
-  height: 70px;
+  width: 80px;
+  height: 60px;
   border: 1px solid grey;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
   border: 4px;
+}
+@media screen and (min-width: 768px) {
+  .medium-big {
+    width: 90px;
+    height: 70px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .medium-big {
