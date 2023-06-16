@@ -422,12 +422,14 @@ button:hover,
 }
 
 .hero {
-  background-color: #D44A7A;
-  height: 740px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-video {
+  width: 100%;
 }
 
 .examples {
