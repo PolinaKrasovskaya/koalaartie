@@ -429,7 +429,22 @@ button:hover,
 }
 
 .hero-video {
+  display: none;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero-video {
+    display: block;
+  }
+}
+
+.hero-img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero-img {
+    display: none;
+  }
 }
 
 .examples {
