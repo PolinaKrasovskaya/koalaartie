@@ -319,7 +319,6 @@ button:hover,
 
 .aboutus {
   background-color: #ffffff;
-  border: 1px solid #d41443;
   width: 100%;
   display: block;
   align-items: center;
@@ -424,7 +423,6 @@ button:hover,
 
 .hero {
   background-color: #D44A7A;
-  border: 5px solid black;
   height: 740px;
   width: 100%;
   display: flex;
@@ -434,7 +432,6 @@ button:hover,
 
 .examples {
   background-color: #ffffff;
-  border: 1px solid #d41443;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -594,7 +591,6 @@ button:hover,
 
 .prices {
   background-color: #ffffff;
-  border: 1px solid #d41443;
 }
 
 .prices-heading {
@@ -817,7 +813,6 @@ button:hover,
   display: block;
   margin-top: auto;
   margin-bottom: auto;
-  border: 3px solid red;
 }
 
 .header-main {
@@ -841,12 +836,18 @@ button:hover,
 }
 @media screen and (min-width: 768px) {
   .header-contacts {
-    width: 250px;
+    width: 180px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-contacts {
     width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .whatsapp {
+    margin-left: 100px;
   }
 }
 
@@ -894,9 +895,19 @@ button:hover,
   }
 }
 
+.header-logo {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .header-logo {
+    display: none;
+  }
+}
+
 .links-mob {
   display: flex;
-  width: 190px;
+  width: 180px;
 }
 @media screen and (min-width: 768px) {
   .links-mob {
@@ -904,10 +915,14 @@ button:hover,
   }
 }
 
+.header-menu-button {
+  width: 180px;
+}
+
 .icon-contact {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  fill: #252525;
 }
 
 .logo-mob {
@@ -1056,7 +1071,6 @@ button:hover,
 .footer {
   position: relative;
   background-color: #fff5f6;
-  border: 2px solid violet;
 }
 .footer::after {
   display: block;
