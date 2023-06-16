@@ -1,8 +1,8 @@
 @import './styleDefoult/mixin';
 .hero {
-  background-color: #D44A7A;
-  border: 5px solid black;
-  height: 740px;
+  // background-color: #D44A7A;
+  // border: 5px solid black;
+  // height: 740px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -10,4 +10,20 @@
 }
 
 
+.hero-video{
+  display: none;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero-img{
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 

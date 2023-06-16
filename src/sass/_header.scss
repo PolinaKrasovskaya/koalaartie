@@ -3,7 +3,7 @@
   display: block;
   margin-top: auto;
   margin-bottom: auto;
-  border: 3px solid red;
+  // border: 3px solid red;
   // border-bottom: 1px solid #ececec;
   // background-color: #fff;
   // top: 0;
@@ -30,7 +30,7 @@
   width: 300px;
 
   @media screen and(min-width: 768px) {
-    width: 250px;
+    width: 180px;
   }
 
   @media screen and(min-width: 1200px) {
@@ -38,6 +38,11 @@
   }
 }
 
+.whatsapp{
+  @media screen and(min-width: 1200px) {
+    margin-left: 100px;
+  }
+}
 .contact-link {
   display: inline-flex;
   align-items: center;
@@ -90,19 +95,35 @@
   }
 }
 
+.header-logo{
+  // border: 1px solid blue;
+
+  margin-right: 30px;
+  margin-left: 30px;
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+
 .links-mob {
+  // border: 1px solid rebeccapurple;
   display: flex;
-  width: 190px;
+  width: 180px;
 
   @media screen and(min-width: 768px) {
     display: none;
   }
 }
 
+.header-menu-button{
+  width: 180px;
+}
+
 .icon-contact {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  // margin-right: 10px;
+  fill: #252525;
 }
 
 .logo-mob {
