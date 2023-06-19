@@ -9,7 +9,6 @@ body {
 
 html {
   box-sizing: border-box;
-  background-color: #D4FFE9;
 }
 
 *,
@@ -497,7 +496,7 @@ button:hover,
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #52695D;
+  color: #2a3831;
 }
 
 .examples-text {
@@ -623,7 +622,7 @@ button:hover,
   font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #52695D;
+  color: #2a3831;
 }
 @media screen and (min-width: 768px) {
   .prices-heading {
@@ -812,7 +811,7 @@ button:hover,
   font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #52695D;
+  color: #2a3831;
 }
 @media screen and (min-width: 768px) {
   .products-heading {
@@ -834,6 +833,7 @@ button:hover,
   display: block;
   margin-top: auto;
   margin-bottom: auto;
+  background-color: #D4FFE9;
 }
 
 .header-main {
