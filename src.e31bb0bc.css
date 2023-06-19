@@ -26,7 +26,7 @@ p {
 }
 
 body * {
-  font-family: "Old Standard TT", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -326,7 +326,7 @@ button:hover,
 }
 
 .aboutus-heading {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
   text-transform: uppercase;
   font-size: 34px;
@@ -455,7 +455,7 @@ button:hover,
 }
 
 .examples-heading {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -989,6 +989,7 @@ button:hover,
 .site-nav {
   margin-bottom: 0;
   display: block;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .site-nav {
@@ -1038,6 +1039,7 @@ button:hover,
 .nav-link {
   width: 300px;
   text-decoration: none;
+  color: #252525;
 }
 
 .auth-nav {
@@ -1076,6 +1078,19 @@ button:hover,
 }
 .auth-nav .item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  fill: #252525;
+}
+
+.icon-logo {
+  display: block;
+  width: 100px;
+  height: 100px;
 }
 
 button:hover,
