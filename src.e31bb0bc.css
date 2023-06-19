@@ -1076,7 +1076,7 @@ button:hover,
     margin-left: 50px;
   }
 }
-.auth-nav .item:not(:last-child) {
+.auth-nav .item:not(:last-chverild) {
   margin-bottom: 10px;
 }
 
@@ -1085,6 +1085,10 @@ button:hover,
   width: 28px;
   height: 28px;
   fill: #252525;
+}
+.icon:hover, .icon:focus {
+  color: pink;
+  fill: pink;
 }
 
 .icon-logo {
