@@ -9,6 +9,7 @@ body {
 
 html {
   box-sizing: border-box;
+  background-color: #D4FFE9;
 }
 
 *,
@@ -178,10 +179,10 @@ img {
   }
 }
 .menu-button:hover .icon-menu {
-  fill: #2196f3;
+  fill: #678576;
 }
 .menu-button:hover .icon-cross {
-  fill: #2196f3;
+  fill: #678576;
 }
 
 .menu-button.is-open .icon-cross {
@@ -318,7 +319,6 @@ button:hover,
 }
 
 .aboutus {
-  background-color: #ffffff;
   width: 100%;
   display: block;
   align-items: center;
@@ -330,10 +330,10 @@ button:hover,
   text-align: center;
   text-transform: uppercase;
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: #2a3831;
 }
 @media screen and (min-width: 768px) {
   .aboutus-heading {
@@ -400,7 +400,16 @@ button:hover,
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f5f4fa;
+  border: 2px solid #2a3831;
+}
+
+.icon-direction {
+  height: 100px;
+  fill: #252525;
+}
+
+.icon-bus {
+  height: 80px;
 }
 
 .directions {
@@ -448,7 +457,6 @@ button:hover,
 }
 
 .examples {
-  background-color: #ffffff;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -460,10 +468,10 @@ button:hover,
   text-align: center;
   text-transform: uppercase;
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: #52695D;
 }
 @media screen and (min-width: 768px) {
   .examples-heading {
@@ -489,7 +497,7 @@ button:hover,
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: #52695D;
 }
 
 .examples-text {
@@ -606,20 +614,16 @@ button:hover,
   cursor: pointer;
 }
 
-.prices {
-  background-color: #ffffff;
-}
-
 .prices-heading {
   margin-top: 20px;
   margin-bottom: 50px;
   text-align: center;
   text-transform: uppercase;
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: #52695D;
 }
 @media screen and (min-width: 768px) {
   .prices-heading {
@@ -805,10 +809,10 @@ button:hover,
   text-align: center;
   text-transform: uppercase;
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: #52695D;
 }
 @media screen and (min-width: 768px) {
   .products-heading {
@@ -990,6 +994,7 @@ button:hover,
   margin-bottom: 0;
   display: block;
   text-transform: uppercase;
+  background-color: #D4FFE9;
 }
 @media screen and (min-width: 768px) {
   .site-nav {
@@ -1106,7 +1111,7 @@ button:hover,
 
 .footer {
   position: relative;
-  background-color: #fff5f6;
+  background-color: #D4FFE9;
 }
 .footer::after {
   display: block;
@@ -1208,6 +1213,10 @@ button:hover,
   height: 145px;
 }
 
+.logo-svg {
+  width: 145px;
+}
+
 .footer-item {
   display: block;
   align-items: center;
@@ -1217,16 +1226,6 @@ button:hover,
 .footer-auth-nav {
   align-items: center;
   display: block;
-}
-@media screen and (min-width: 768px) {
-  .footer-auth-nav {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-auth-nav {
-    margin-left: auto;
-  }
 }
 .footer-auth-nav .item {
   margin-left: auto;
@@ -1294,6 +1293,10 @@ button:hover,
     width: 472px;
     font-size: 30px;
   }
+}
+
+.footer-links {
+  display: flex;
 }
 
 .footer-passion {
