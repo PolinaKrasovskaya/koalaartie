@@ -1,22 +1,21 @@
 .examples {
-  background-color: #ffffff;
-  // border: 1px solid #d41443;
+  background-color: $grey-bg;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
 .examples-heading {
-  margin-top: 20px;
+  padding-top: 50px;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   // font-family: Titan One;
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: $dark-bg;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -25,7 +24,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 58px;
+    font-size: 48px;
     line-height: 1.14;
     margin-bottom: 20px;
   }
@@ -41,7 +40,7 @@ margin-top: 0;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: #2a3831;
 }
 
 .examples-text{

@@ -1,7 +1,9 @@
 @import './styleDefoult/mixin';
 .aboutus {
-  background-color: #ffffff;
+  // background-color: $grey-bg;
   // border: 1px solid #d41443;
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   display: block;
   align-items: center;
@@ -9,16 +11,16 @@
 }
 
 .aboutus-heading {
-  margin-top: 20px;
+  padding-bottom: 20px;
   // margin-bottom: 144px;
   text-align: center;
   text-transform: uppercase;
   // font-family: Titan One;
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: $dark-bg;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -27,7 +29,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 58px;
+    font-size: 48px;
     line-height: 1.14;
     // margin-bottom: 259px;
   }
@@ -86,9 +88,22 @@
     margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: $grey-bg;
+    background-color: $icon-grey;
+    // border: 2px solid #2a3831;
 }
 
+.icon-direction {
+  height: 100px;
+  fill: #252525;
+}
+
+.icon-palitra{}
+
+.icon-bus{
+  height: 80px;
+}
+
+.icon-price{}
 // .icon-antenna::before {
 //   background-image: url(../img/decor/antenna1.svg);
 // }
