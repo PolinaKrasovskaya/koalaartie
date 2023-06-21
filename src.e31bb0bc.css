@@ -32,10 +32,11 @@ ol {
 body {
   margin: 0;
   padding: 0;
+  color: #1b1f29;
 }
 
 body * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather", serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -78,15 +79,15 @@ img {
 }
 
 .link {
-  color: #757575;
-  fill: #757575;
+  color: #1b1f29;
+  fill: #1b1f29;
   text-decoration: none;
   align-items: center;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover, .link:focus {
-  color: #FFE0F3;
-  fill: #FFE0F3;
+  color: #6D82B0;
+  fill: #6D82B0;
 }
 
 .section {
@@ -106,7 +107,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: #1b1f29;
 }
 
 .section-title {
@@ -116,7 +117,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: #141413;
 }
 @media (min-width: 1200px) {
   .section-title {
@@ -146,7 +147,7 @@ img {
 }
 
 .current:visited {
-  color: #FFE0F3;
+  color: #6D82B0;
 }
 
 .button {
@@ -165,11 +166,11 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #FFE0F3;
+  background-color: #6D82B0;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover, .button:focus {
-  color: #FFE0F3;
+  color: #6D82B0;
   background-color: #ffffff;
 }
 
@@ -215,7 +216,7 @@ img {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background: #FFE0F3;
+  background: #6D82B0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
   border-radius: 4px;
@@ -224,11 +225,11 @@ img {
 }
 .subscribe-button:hover, .subscribe-button:focus {
   background-color: #ffffff;
-  color: #FFE0F3;
-  fill: #FFE0F3;
+  color: #6D82B0;
+  fill: #6D82B0;
 }
 .subscribe-button:hover .icon-send, .subscribe-button:focus .icon-send {
-  fill: #FFE0F3;
+  fill: #6D82B0;
 }
 
 .icon-send {
@@ -249,14 +250,14 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
-  background-color: #f5f4fa;
+  color: #141413;
+  background-color: #e4e9f3;
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-button:hover, .list-button:focus {
   color: #ffffff;
-  background-color: #FFE0F3;
+  background-color: #6D82B0;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -302,7 +303,7 @@ img {
   width: 100%;
   height: 50px;
   padding: 15px 16px;
-  background-color: #2f303a;
+  background-color: #394763;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -329,6 +330,8 @@ button:hover,
 }
 
 .aboutus {
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   display: block;
   align-items: center;
@@ -336,14 +339,14 @@ button:hover,
 }
 
 .aboutus-heading {
-  margin-top: 50px;
+  padding-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   font-size: 34px;
   font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #2a3831;
+  color: #394763;
 }
 @media screen and (min-width: 768px) {
   .aboutus-heading {
@@ -353,7 +356,7 @@ button:hover,
 }
 @media screen and (min-width: 1280px) {
   .aboutus-heading {
-    font-size: 58px;
+    font-size: 48px;
     line-height: 1.14;
   }
 }
@@ -410,7 +413,7 @@ button:hover,
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #2a3831;
+  background-color: #FAECCD;
 }
 
 .icon-direction {
@@ -429,7 +432,7 @@ button:hover,
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: #141413;
   text-align: center;
 }
 
@@ -445,6 +448,12 @@ button:hover,
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.box-hero {
+  height: 600px;
+  width: 100%;
+  border: 2px solid grey;
 }
 
 .hero-video {
@@ -467,13 +476,14 @@ button:hover,
 }
 
 .examples {
+  background-color: #e4e9f3;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
 .examples-heading {
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -481,7 +491,7 @@ button:hover,
   font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #52695D;
+  color: #394763;
 }
 @media screen and (min-width: 768px) {
   .examples-heading {
@@ -492,7 +502,7 @@ button:hover,
 }
 @media screen and (min-width: 1200px) {
   .examples-heading {
-    font-size: 58px;
+    font-size: 48px;
     line-height: 1.14;
     margin-bottom: 20px;
   }
@@ -633,7 +643,7 @@ button:hover,
   font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  color: #2a3831;
+  color: #394763;
 }
 @media screen and (min-width: 768px) {
   .prices-heading {
@@ -643,7 +653,7 @@ button:hover,
 }
 @media screen and (min-width: 1200px) {
   .prices-heading {
-    font-size: 58px;
+    font-size: 48px;
     line-height: 1.14;
   }
 }
@@ -677,8 +687,8 @@ button:hover,
   height: 190px;
 }
 .large:hover, .large:focus, .large:touchstart {
-  color: #FFE0F3;
-  fill: #FFE0F3;
+  color: #6D82B0;
+  fill: #6D82B0;
 }
 @media screen and (min-width: 768px) {
   .large {
@@ -850,20 +860,31 @@ button:hover,
   position: relative;
   display: none;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 1px solid grey;
 }
 @media screen and (min-width: 768px) {
   .header-main {
     display: flex;
-    height: 80px;
+    height: 40px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .header-main {
+    display: flex;
+    height: 30px;
+  }
+}
+
+.first-part-header {
+  display: flex;
 }
 
 .header-contacts {
   display: flex;
   justify-content: space-around;
   width: 300px;
+  font-size: 10px;
 }
 @media screen and (min-width: 768px) {
   .header-contacts {
@@ -921,7 +942,7 @@ button:hover,
 }
 @media screen and (min-width: 768px) {
   .main-nav {
-    height: 80px;
+    height: 110px;
     justify-content: center;
   }
 }
@@ -934,6 +955,10 @@ button:hover,
   .header-logo {
     display: none;
   }
+}
+
+.social-links-header {
+  display: inline-flex;
 }
 
 .links-mob {
@@ -1008,19 +1033,20 @@ button:hover,
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
+    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
   .site-nav .item {
     display: flex;
     height: 40px;
+    align-items: center;
     justify-content: left;
   }
 }
 @media screen and (max-width: 767px) {
   .site-nav .item:last-child {
     display: flex;
-    height: 40px;
     justify-content: left;
     margin-bottom: 20px;
   }
@@ -1045,6 +1071,7 @@ button:hover,
 }
 
 .item {
+  width: 150px;
   display: block;
   align-items: center;
   justify-content: center;
@@ -1053,7 +1080,7 @@ button:hover,
 .nav-link {
   width: 300px;
   text-decoration: none;
-  color: #252525;
+  color: #1b1f29;
 }
 
 .auth-nav {
@@ -1096,8 +1123,8 @@ button:hover,
 
 .icon {
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
   fill: #252525;
 }
 .icon:hover, .icon:focus {
@@ -1112,8 +1139,8 @@ button:hover,
 }
 @media screen and (min-width: 768px) {
   .icon-logo {
-    height: 80px;
-    width: 100px;
+    height: 100px;
+    width: 160px;
   }
 }
 
@@ -1121,7 +1148,7 @@ button:hover,
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
-  background-color: #2f303a;
+  background-color: #394763;
   position: relative;
   display: flex;
   align-items: center;
@@ -1174,12 +1201,11 @@ button:hover,
 }
 
 .footer-contact-link {
-  color: #afb1b8;
+  color: #FAECCD;
 }
 
 .adress {
   margin-top: 10px;
-  text-transform: uppercase;
 }
 
 .footer-links {
@@ -1232,8 +1258,8 @@ button:hover,
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-footer:hover, .social-link-footer:focus {
-  background-color: #FFE0F3;
-  fill: #212121;
+  background-color: #6D82B0;
+  fill: #141413;
 }
 
 .social-icon-footer {
@@ -1242,7 +1268,7 @@ button:hover,
   fill: #ffffff;
 }
 .social-icon-footer:hover, .social-icon-footer:focus {
-  fill: #212121;
+  fill: #141413;
 }
 
 .pageup {
