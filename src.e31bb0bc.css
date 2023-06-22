@@ -189,11 +189,8 @@ img {
     display: none;
   }
 }
-.menu-button:hover .icon-menu {
-  fill: #394763;
-}
 .menu-button:hover .icon-cross {
-  fill: #394763;
+  fill: red;
 }
 
 .menu-button.is-open .icon-cross {
@@ -944,6 +941,7 @@ button:hover,
   width: 100%;
   display: flex;
   align-items: center;
+  height: 70px;
 }
 @media screen and (max-width: 767px) {
   .main-nav {
@@ -962,8 +960,7 @@ button:hover,
 }
 
 .header-logo-mob {
-  margin-right: 30px;
-  margin-left: 30px;
+  padding-right: 10px;
 }
 @media screen and (min-width: 768px) {
   .header-logo-mob {
@@ -985,7 +982,9 @@ button:hover,
 
 .links-mob {
   display: flex;
+  justify-content: end;
   width: 120px;
+  padding-right: 10px;
 }
 @media screen and (min-width: 768px) {
   .links-mob {
@@ -1015,7 +1014,6 @@ button:hover,
     text-align: left;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 0px rgba(0, 0, 0, 0);
     position: absolute;
-    border-radius: 0 0 100px 0;
     width: 240px;
     padding: 20px;
     padding-left: 30px;
@@ -1157,6 +1155,19 @@ button:hover,
 }
 .icon:hover, .icon:focus {
   fill: #6D82B0;
+}
+
+.mob-menu-links {
+  margin-top: 20px;
+  display: flex;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+
+.icon-mob-menu {
+  fill: #394763;
 }
 
 .footer {
