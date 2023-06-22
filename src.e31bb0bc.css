@@ -957,10 +957,11 @@ button:hover,
 
 .header-menu-button {
   width: 120px;
+  padding-left: 20px;
 }
 
 .header-logo-mob {
-  padding-right: 10px;
+  padding-right: 30px;
 }
 @media screen and (min-width: 768px) {
   .header-logo-mob {
