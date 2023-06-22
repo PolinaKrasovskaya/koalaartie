@@ -11,7 +11,7 @@
 
   @media screen and(min-width: 768px) {
     display: flex;
-    height: 40px;
+    height: 30px;
   }
 }
 
@@ -42,7 +42,7 @@
   display: inline-flex;
   align-items: center;
 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -63,7 +63,7 @@
     letter-spacing: 0.02em;
 
     @media screen and(min-width: 1200px) {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 400;
       line-height: 1.14;
       letter-spacing: 0.02em;
@@ -188,10 +188,12 @@
   margin-bottom: 0;
   display: block;
   text-transform: uppercase;
+  border-bottom: 1px solid grey;
 
   @media screen and(min-width: 768px) {
     display: flex;
     align-items: center;
+    border-bottom: none;
   }
 
   .menu-item {
@@ -199,12 +201,13 @@
       display: flex;
       height: 40px;
       align-items: center;
-      justify-content: left;
+      text-align: center;
+      width: 180px;
     }
     &:last-child {
       @media screen and(max-width: 767px) {
         display: flex;
-        justify-content: left;
+
         margin-bottom: 20px;
       }
     }
@@ -245,7 +248,8 @@
 }
 
 .menu-item {
-  width: 150px;
+  width: 120px;
+  // border: 1px solid grey;
   display: block;
   align-items: center;
   justify-content: center;
@@ -262,10 +266,14 @@
   color: $main-text-cl;
   font-size: 14px;
   font-weight: 400;
-  text-shadow: 1px 1px 1px #5f5b5b;
+  text-shadow: 1px 1px 2px $accent-cl;
 
   @media screen and(min-width: 768px) {
     font-size: 16px;
+    font-weight: 400;
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 18px;
     font-weight: 400;
   }
 }
@@ -273,11 +281,22 @@
 .auth-nav {
   align-items: center;
   display: block;
+  margin-top: 15px;
+  margin-bottom: 30px;
 
   @media screen and(min-width: 768px) {
     display: none;
   }
 
+  .menu-item {
+    @media screen and(max-width: 767px) {
+      display: flex;
+      height: 30px;
+      align-items: center;
+      text-align: center;
+      width: 180px;
+    }
+  }
   .menu-item {
     @media screen and(min-width: 768px) {
       margin-left: 70px;
@@ -288,7 +307,7 @@
 
 .mob-menu-contact {
   margin-left: 10px;
-
+  color: $main-text-cl;
   
   &:hover,
   &:focus {
@@ -313,10 +332,14 @@
 .mob-menu-links{
   margin-top: 20px;
   display: flex;
-  width: 150px;
+  width: 180px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
+
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
 }
 
 .icon-mob-menu{
