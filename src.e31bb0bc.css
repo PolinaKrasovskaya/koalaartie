@@ -1047,6 +1047,7 @@ button:hover,
   .site-nav {
     display: flex;
     align-items: center;
+    border-bottom: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1178,6 +1179,11 @@ button:hover,
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu-links {
+    display: none;
+  }
 }
 
 .icon-mob-menu {
