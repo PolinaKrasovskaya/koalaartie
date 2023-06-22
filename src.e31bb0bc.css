@@ -190,7 +190,7 @@ img {
   }
 }
 .menu-button:hover .icon-cross {
-  fill: red;
+  fill: #394763;
 }
 
 .menu-button.is-open .icon-cross {
