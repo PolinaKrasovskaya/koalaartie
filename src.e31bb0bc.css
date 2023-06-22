@@ -1041,6 +1041,7 @@ button:hover,
   margin-bottom: 0;
   display: block;
   text-transform: uppercase;
+  border-bottom: 1px solid grey;
 }
 @media screen and (min-width: 768px) {
   .site-nav {
@@ -1053,13 +1054,13 @@ button:hover,
     display: flex;
     height: 40px;
     align-items: center;
-    justify-content: left;
+    text-align: center;
+    width: 180px;
   }
 }
 @media screen and (max-width: 767px) {
   .site-nav .menu-item:last-child {
     display: flex;
-    justify-content: left;
     margin-bottom: 20px;
   }
 }
@@ -1128,10 +1129,21 @@ button:hover,
 .auth-nav {
   align-items: center;
   display: block;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .auth-nav {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .auth-nav .menu-item {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    width: 180px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1143,6 +1155,7 @@ button:hover,
 
 .mob-menu-contact {
   margin-left: 10px;
+  color: #1b1f29;
 }
 .mob-menu-contact:hover .icon, .mob-menu-contact:focus .icon {
   fill: #394763;
