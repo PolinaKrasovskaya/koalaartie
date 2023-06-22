@@ -1118,7 +1118,7 @@ button:hover,
   color: #1b1f29;
   font-size: 14px;
   font-weight: 400;
-  text-shadow: 1px 1px 8px #6D82B0;
+  text-shadow: 1px 1px 3px #6D82B0;
 }
 @media screen and (min-width: 768px) {
   .nav-link {
