@@ -31,7 +31,14 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
-    <title>EP</title>
+    <title>Koala Art</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon_package/favicon-16x16.png">
+<!-- <link rel="manifest" href="./favicon_package/site.webmanifest"> -->
+<link rel="mask-icon" href="./favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
   </head>
 
   <body>
@@ -47,6 +54,8 @@
     <include src="./partials/delivery.html"></include> -->
     <include src="./partials/footer.html"></include>
     <include src="./partials/_arrowUp.html"></include>
+    <include src="./partials/button_order.html"></include>
+    <include src="./partials/modal.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script
@@ -69,54 +78,6 @@
 
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
-    <!-- <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide', {
-          rewind: false,
-          rewindByDrag: false,
-        });
-        splide.mount();
-      });
-    </script> -->
-    <!-- <script>
-      new Splide('.splide', {
-        perPage: 3,
-        // gap: '1rem',
-        // rewind: false,
-        // rewindByDrag: false,
-        // focus  : 'center',
-        drag: false,
-        perMove: 3,
-        // padding: { left: 30 },
-        breakpoints: {
-          1280: { perPage: 2, perMove: 2 },
-          768: { perPage: 1, perMove: 1 },
-        },
-        // height: auto,
-        // fixedHeight: '600px',
-        // width: '80%',
-        classes: {
-          pagination: 'splide__pagination my-pagination',
-          page: 'splide__pagination__page my-page',
-        },
-      }).mount();
-
-      new Splide('.splide1', {
-        perPage: 3,
-        drag: false,
-        perMove: 3,
-        // padding: { left: 30 },
-        breakpoints: {
-          1200: { perPage: 2, perMove: 2 },
-          768: { perPage: 1, perMove: 1 },
-        },
-        classes: {
-          pagination: 'splide__pagination my-pagination',
-          page: 'splide__pagination__page my-page',
-        },
-      }).mount();
-    </script> -->
-
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         var main = new Splide('#main-carousel', {
@@ -194,30 +155,6 @@
         thumbnails.mount();
       });
     </script>
-
-    <!-- <script>
-      const btnMenu = document.querySelector('.menu-button');
-      const menu = document.querySelector('.menu-container');
-      const toggleMenu = function () {
-        menu.classList.toggle('icon-cross');
-      };
-
-      btnMenu.addEventListener('click', function (e) {
-        e.stopPropagation();
-        toggleMenu();
-      });
-
-      document.addEventListener('click', function (e) {
-        const target = e.target;
-        const its_menu = target == menu || menu.contains(target);
-        const its_btnMenu = target == btnMenu;
-        const menu_is_active = menu.classList.contains('icon-cross');
-
-        if (!its_menu && !its_btnMenu && menu_is_active) {
-          toggleMenu();
-        }
-      });
-    </script> -->
     <script>
       new Splide('#image-carousel', {
         cover: true,
